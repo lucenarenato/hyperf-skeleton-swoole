@@ -9,13 +9,14 @@ declare(strict_types=1);
  * @contact  group@hyperf.io
  * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
+use Hyperf\Watcher\Driver\ScanFileDriver;
 
-namespace App\Process;
-
-use Hyperf\AsyncQueue\Process\ConsumerProcess;
-use Hyperf\Process\Annotation\Process;
-
-#[Process]
-class AsyncQueueConsumer extends ConsumerProcess
-{
-}
+return [
+    'driver' => ScanFileDriver::class,
+    'bin' => 'php',
+    'watch' => [
+        'dir' => ['app', 'config'],
+        'file' => ['.env'],
+        'scan_interval' => 2000,
+    ],
+];

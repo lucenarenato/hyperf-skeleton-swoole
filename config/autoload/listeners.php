@@ -10,6 +10,4 @@ declare(strict_types=1);
  * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
 return [
-    Hyperf\ExceptionHandler\Listener\ErrorExceptionHandler::class,
-    Hyperf\Command\Listener\FailToHandleListener::class,
 ];

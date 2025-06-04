@@ -9,7 +9,6 @@ declare(strict_types=1);
  * @contact  group@hyperf.io
  * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
-
 namespace App\Controller;
 
 use Hyperf\Di\Annotation\Inject;
@@ -19,12 +18,21 @@ use Psr\Container\ContainerInterface;
 
 abstract class AbstractController
 {
-    #[Inject]
-    protected ContainerInterface $container;
+    /**
+     * @Inject
+     * @var ContainerInterface
+     */
+    protected $container;
 
-    #[Inject]
-    protected RequestInterface $request;
+    /**
+     * @Inject
+     * @var RequestInterface
+     */
+    protected $request;
 
-    #[Inject]
-    protected ResponseInterface $response;
+    /**
+     * @Inject
+     * @var ResponseInterface
+     */
+    protected $response;
 }

@@ -1,14 +1,5 @@
 <?php
 
-declare(strict_types=1);
-/**
- * This file is part of Hyperf.
- *
- * @link     https://www.hyperf.io
- * @document https://hyperf.wiki
- * @contact  group@hyperf.io
- * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
- */
 $header = <<<'EOF'
 This file is part of Hyperf.
 
@@ -18,7 +9,7 @@ This file is part of Hyperf.
 @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
 EOF;
 
-return (new PhpCsFixer\Config())
+return PhpCsFixer\Config::create()
     ->setRiskyAllowed(true)
     ->setRules([
         '@PSR2' => true,
@@ -26,24 +17,19 @@ return (new PhpCsFixer\Config())
         '@DoctrineAnnotation' => true,
         '@PhpCsFixer' => true,
         'header_comment' => [
-            'comment_type' => 'PHPDoc',
+            'commentType' => 'PHPDoc',
             'header' => $header,
             'separate' => 'none',
             'location' => 'after_declare_strict',
         ],
         'array_syntax' => [
-            'syntax' => 'short',
+            'syntax' => 'short'
         ],
         'list_syntax' => [
-            'syntax' => 'short',
+            'syntax' => 'short'
         ],
         'concat_space' => [
-            'spacing' => 'one',
-        ],
-        'global_namespace_import' => [
-            'import_classes' => true,
-            'import_constants' => true,
-            'import_functions' => null,
+            'spacing' => 'one'
         ],
         'blank_line_before_statement' => [
             'statements' => [
@@ -52,7 +38,7 @@ return (new PhpCsFixer\Config())
         ],
         'general_phpdoc_annotation_remove' => [
             'annotations' => [
-                'author',
+                'author'
             ],
         ],
         'ordered_imports' => [
@@ -94,7 +80,6 @@ return (new PhpCsFixer\Config())
         'single_quote' => true,
         'standardize_not_equals' => true,
         'multiline_comment_opening_closing' => true,
-        'single_line_empty_body' => false,
     ])
     ->setFinder(
         PhpCsFixer\Finder::create()
