@@ -12,4 +12,7 @@ composer install
 Run project
 ```shell
 docker compose up -d
+docker container exec -it hyperf-skeleton php bin/hyperf.php migrate
+OR
+php bin/hyperf.php migrate
 ```
