@@ -1,6 +1,6 @@
 # Hyperf Skeleton
 
-> This skeleton project is the result from [this article](https://leocarmo.dev/hyperf-php-coroutine-framework-baseado-em-swoole).
+> This skeleton project is the result from [this article](https://rlucena.com/post/hyperf-php-coroutine-framework-baseado-em-swoole).
 
 Setup project
 ```shell

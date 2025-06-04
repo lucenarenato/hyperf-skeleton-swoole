@@ -9,3 +9,5 @@ php bin/hyperf.php start
 
 ## dockerfile image 
     image: hyperf/hyperf:8.0-alpine-v3.13-swoole
+
+- https://rlucena.com/post/hyperf-php-coroutine-framework-baseado-em-swoole
