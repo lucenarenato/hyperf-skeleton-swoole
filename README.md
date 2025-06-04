@@ -1,5 +1,7 @@
 # Hyperf Skeleton
 
+![alt](Screenshot_2025-06-04_153914.png)
+
 > This skeleton project is the result from [this article](https://rlucena.com/post/hyperf-php-coroutine-framework-baseado-em-swoole).
 
 Setup project
